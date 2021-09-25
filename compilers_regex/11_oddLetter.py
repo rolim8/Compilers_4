@@ -5,7 +5,7 @@ string = input("Digite uma frase: ")
 count = 0
 
 for i in string:
-    if i == 'a':
+    if i == 'a'|i == 'á'|i == 'â':
         count += 1
 
 if count % 2 == 1:
