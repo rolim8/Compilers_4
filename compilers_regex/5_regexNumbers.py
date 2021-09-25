@@ -2,14 +2,14 @@
 
 import re
 
-regexNum = '^[0-9]+$'
+regexNum = r'^\d*[.,]?\d*$'
 
 
 def check(str):
     if re.search(regexNum, str):
-        print(f"'{str}' É NÚMERO")
+        print(f"'{str}' É UM NÚMERO VÁLIDO")
     else:
-        print(f"'{str}' NÃO É NÚMERO")
+        print(f"'{str}' NÃO É UM VALOR VÁLIDO")
 
 
 if __name__ == '__main__':
